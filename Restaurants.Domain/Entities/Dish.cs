@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Restaurants.Domain.Entities
+﻿namespace Restaurants.Domain.Entities
 {
     public class Dish
     {
@@ -13,5 +7,6 @@ namespace Restaurants.Domain.Entities
         public string Description { get; set; } = default!;
         public decimal Price { get; set; }
 
+        public int RestaurantId { get; set; }
     }
 }
